@@ -3,8 +3,7 @@
 # Usage: .py
 #
 
-from collections import namedtuple
-
+from collections import na
 import sys
 from bs4 import BeautifulSoup
 from collections import defaultdict
