@@ -4,16 +4,17 @@
 #
 
 from collections import namedtuple
-from dataclasses import make_dataclass
-from enum import Enum
-import re
+
+import sys
+from bs4 import BeautifulSoup
+from collections import defaultdict
 
 
 def main():
     html = read_file('index.html')
     doc  = BeautifulSoup(''.join(html), 'html.parser')
     hhh = defaultdict(lambda: defaultdict(list))
-    for i in range(1, 5):
+    for i in range(5, 10):
         for h in doc.find_all(f'h{i}'):
             an_id = h.attrs['id']
             text  = h.text.lstrip('#')
