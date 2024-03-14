@@ -4,7 +4,6 @@
 #
 
 from collections import namedtuple
-from dataclasses import make_dataclass
 
 import sys
 from bs4 import BeautifulSoup
