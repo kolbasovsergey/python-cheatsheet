@@ -7,7 +7,6 @@ from collections import namedtuple
 from dataclasses import make_dataclass
 from enum import Enum
 import re
-from collections import defaultdict
 
 
 def main():
