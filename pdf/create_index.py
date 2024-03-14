@@ -5,8 +5,7 @@
 
 from collections import namedtuple
 from dataclasses import make_dataclass
-from enum import Enum
-import re
+from enum import En
 import sys
 from bs4 import BeautifulSoup
 from collections import defaultdict
